@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
 
-import 'package:uno/uno.dart';
-
 import 'package:flutter_nexmuv/app/http/http.dart';
 import 'package:flutter_nexmuv/app/models/crypto_model.dart';
 

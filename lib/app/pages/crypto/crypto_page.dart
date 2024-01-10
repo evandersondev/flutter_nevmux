@@ -6,10 +6,8 @@ import 'package:get_it/get_it.dart';
 import 'package:flutter_nexmuv/app/blocs/crypto/crypto_bloc.dart';
 import 'package:flutter_nexmuv/app/blocs/crypto/crypto_event.dart';
 import 'package:flutter_nexmuv/app/blocs/crypto/crypto_state.dart';
-import 'package:flutter_nexmuv/app/http/uno_client.dart';
 import 'package:flutter_nexmuv/app/pages/crypto/widgets/chart_widget.dart';
 import 'package:flutter_nexmuv/app/pages/crypto/widgets/crypto_card_widget.dart';
-import 'package:flutter_nexmuv/app/repositories/crypto_repository.dart';
 
 class CryptoPage extends StatefulWidget {
   const CryptoPage({
