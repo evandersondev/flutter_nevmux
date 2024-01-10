@@ -1,16 +1,44 @@
-# flutter_nexmuv
+<h1 align="center">
 
-A new Flutter project.
+FLUTTER NEXMUV
 
-## Getting Started
+</h1>
 
-This project is a starting point for a Flutter application.
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">Project test to at Nexmux</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<hr />
+
+### Getting started
+
+- Version Flutter used for this project `v3.16.5`.
+
+- In your terminal, run the steps:
+
+> `flutter pub get` **for install the dependencies**.
+
+> `F5`. **for running in debug mode**.
+
+> `CTRL + F5`. **for running in without debug mode**.
+
+## Features
+
+Features used in the Project.
+
+- Repository Partner
+- BLOC Partner
+- SOLID Principles
+- Dependency Injection
+- Dark theme and Ligth theme
+- You can download APK [here](https://drive.google.com/file/d/1SEefI2bhFLiHVRT4c_hQsXYLlBQq3v2A/view?usp=sharing)
+
+### - LICENSE
+
+This project is licensed under the MIT License - see the <a href="https://opensource.org/licenses/MIT" target="_blank">LICENSE</a> page for details.
