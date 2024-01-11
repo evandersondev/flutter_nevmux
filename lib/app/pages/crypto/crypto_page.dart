@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
@@ -29,7 +30,6 @@ class _CryptoPageState extends State<CryptoPage> {
     super.initState();
 
     cryptoBloc = GetIt.instance.get<CryptoBloc>();
-
     cryptoBloc.add(LoadCryptoEvent(symbol: widget.symbol));
   }
 
@@ -54,18 +54,24 @@ class _CryptoPageState extends State<CryptoPage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      ChartWidget(crypto: cryptoBloc.crypto),
+                      FadeInDown(
+                        from: 50,
+                        child: ChartWidget(crypto: cryptoBloc.crypto),
+                      ),
                       ListView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: state.crypto.length,
                         itemBuilder: (context, index) {
-                          return CryptoCardWidget(
-                            crypto: state.crypto[index],
-                            firstQuote: state.crypto.first.quote,
-                            penultimateQuote: index != 0
-                                ? state.crypto[index - 1].quote
-                                : state.crypto[index].quote,
+                          return FadeInUp(
+                            from: index * 50,
+                            child: CryptoCardWidget(
+                              crypto: state.crypto[index],
+                              firstQuote: state.crypto.first.quote,
+                              penultimateQuote: index != 0
+                                  ? state.crypto[index - 1].quote
+                                  : state.crypto[index].quote,
+                            ),
                           );
                         },
                       ),

@@ -7,10 +7,13 @@ class SymbolCardWidget extends StatelessWidget {
     super.key,
     required this.symbolName,
     required this.symbolLegend,
+    required this.onTap,
   });
 
   final String symbolName;
   final String symbolLegend;
+  final Function({required BuildContext context, required String symbolName})
+      onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +46,7 @@ class SymbolCardWidget extends StatelessWidget {
             child: Text(
               '${symbolName[0]}${symbolName[1]}',
               style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.bold,
                 fontSize: 14,
                 color: Theme.of(context).textTheme.bodyMedium?.color,
               ),
@@ -52,15 +55,7 @@ class SymbolCardWidget extends StatelessWidget {
           Icons.chevron_right,
           color: Theme.of(context).textTheme.bodyMedium?.color,
         ),
-        onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => CryptoPage(
-                symbol: symbolName,
-              ),
-            ),
-          );
-        },
+        onTap: () => onTap(context: context, symbolName: symbolName),
       ),
     );
   }

@@ -18,7 +18,7 @@ class ThemeApp {
           titleTextStyle: TextStyle(
             color: Colors.white,
             fontSize: 20,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
           ),
         ),
         textTheme: const TextTheme(
@@ -40,7 +40,7 @@ class ThemeApp {
           titleTextStyle: TextStyle(
             color: Colors.black87,
             fontSize: 20,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
           ),
         ),
         visualDensity: VisualDensity.adaptivePlatformDensity,

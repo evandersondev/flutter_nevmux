@@ -14,13 +14,13 @@ class AppWidget extends StatelessWidget {
       DeviceOrientation.portraitUp,
     ]);
 
-    return AnimatedBuilder(
-      animation: ThemeController.instance,
-      builder: (context, _) {
+    return ValueListenableBuilder<bool>(
+      valueListenable: ThemeController.instance.isDark,
+      builder: (context, isDark, child) {
         return MaterialApp(
           title: 'Cryptos',
           debugShowCheckedModeBanner: false,
-          theme: ThemeController.instance.isDark
+          theme: ThemeController.instance.isDark.value
               ? ThemeApp(context).dark
               : ThemeApp(context).ligth,
           themeMode: ThemeMode.dark,

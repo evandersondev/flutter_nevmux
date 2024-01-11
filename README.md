@@ -39,6 +39,8 @@ Features used in the Project.
 - Dark theme and Ligth theme
 - You can download APK [here](https://drive.google.com/file/d/1SEefI2bhFLiHVRT4c_hQsXYLlBQq3v2A/view?usp=sharing)
 
+> Obs.: The `Splash Screen` was made with the native android language(JAVA);
+
 ### - LICENSE
 
 This project is licensed under the MIT License - see the <a href="https://opensource.org/licenses/MIT" target="_blank">LICENSE</a> page for details.

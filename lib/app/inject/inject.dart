@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 
 import 'package:flutter_nexmuv/app/blocs/crypto/crypto_bloc.dart';
+import 'package:flutter_nexmuv/app/controllers/home_controller.dart';
 import 'package:flutter_nexmuv/app/http/http.dart';
 import 'package:flutter_nexmuv/app/http/uno_client.dart';
 import 'package:flutter_nexmuv/app/repositories/crypto_repository.dart';
@@ -10,10 +11,10 @@ class Inject {
     GetIt getIt = GetIt.instance;
 
     getIt.registerLazySingleton<IHTTP>(() => UnoClient());
-
     getIt.registerLazySingleton<ICryptoRepository>(
         () => CryptoRepository(client: getIt()));
-
     getIt.registerFactory<CryptoBloc>(() => CryptoBloc(repository: getIt()));
+
+    getIt.registerFactory<HomeController>(() => HomeController());
   }
 }

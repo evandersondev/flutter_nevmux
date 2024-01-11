@@ -18,6 +18,7 @@ dependencies:
   fl_chart: ^0.66.0
   animated_icon_button: ^1.0.2
   get_it: ^7.6.6
+  animate_do: ^3.1.2
 
 dev_dependencies:
   flutter_test:
