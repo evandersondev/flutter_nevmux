@@ -37,7 +37,7 @@ Features used in the Project.
 - SOLID Principles
 - Dependency Injection
 - Dark theme and Ligth theme
-<!-- - You can download APK [here](https://drive.google.com/file/d/10iMkZarTw59ph1ND_8RzoNehVhK68aj8/view?usp=sharing) -->
+- You can download APK [here](https://drive.google.com/file/d/1PSbuooBZzYgeRAD1RSqQFFJ-TxhoO4Ay/view?usp=sharing)
 
 > Obs.: The `Splash Screen` was made with the native android language(JAVA);
 
