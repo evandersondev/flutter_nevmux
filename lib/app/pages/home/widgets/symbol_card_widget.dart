@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_nexmuv/app/pages/crypto/crypto_page.dart';
-
 class SymbolCardWidget extends StatelessWidget {
   const SymbolCardWidget({
     super.key,
