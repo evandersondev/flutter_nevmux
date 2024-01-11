@@ -6,7 +6,7 @@ FLUTTER NEXMUV
 
 <br>
 
-<p align="center">Project test to at Nexmux</p>
+<p align="center">Project test to at Nexmuv</p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
