@@ -12,13 +12,10 @@ class CryptoBloc extends Bloc<CryptoEvent, CryptoState> {
   get crypto => _crypto;
 
   CryptoBloc({required this.repository}) : super(InitialCryptoState()) {
-    on((event, emit) async {
+    on<LoadCryptoEvent>((event, emit) async {
       emit(LoadingCryptoState());
 
-      if (event is LoadCryptoEvent) {
-        _crypto = await repository.load(event.symbol);
-      }
-
+      _crypto = await repository.load(event.symbol);
       emit(LoadedCryptoState(_crypto));
     });
   }

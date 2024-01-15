@@ -33,9 +33,8 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Cryptos'),
         actions: [
           AnimatedIconButton(
-            onPressed: () {
-              ThemeController.instance.toggleTheme();
-            },
+            onPressed: () => ThemeController.instance.toggleTheme(),
+            initialIcon: ThemeController.instance.isDark.value ? 1 : 0,
             icons: [
               AnimatedIconItem(
                 icon: Icon(
