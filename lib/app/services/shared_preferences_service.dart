@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:flutter_nexmuv/app/interfaces/local_storage.dart';
+import 'package:flutter_nexmuv/app/interfaces/local_storage_interface.dart';
 
 class SharedPreferencesService implements ILocalStorage {
   @override

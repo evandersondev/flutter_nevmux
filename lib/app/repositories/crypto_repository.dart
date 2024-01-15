@@ -1,11 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 import 'package:flutter_nexmuv/app/http/http.dart';
+import 'package:flutter_nexmuv/app/interfaces/crypto_repository_interface.dart';
 import 'package:flutter_nexmuv/app/models/crypto_model.dart';
-
-abstract class ICryptoRepository {
-  Future<List<CryptoModel>> load(String symbol);
-}
 
 class CryptoRepository implements ICryptoRepository {
   CryptoRepository({required this.client});

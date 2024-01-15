@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:animate_do/animate_do.dart';
-import 'package:animated_icon_button/animated_icon_button.dart';
 import 'package:get_it/get_it.dart';
 
 import 'package:flutter_nexmuv/app/constants/symbols.dart';
@@ -32,23 +31,15 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Cryptos'),
         actions: [
-          AnimatedIconButton(
-            onPressed: () => ThemeController.instance.toggleTheme(),
-            initialIcon: ThemeController.instance.isDark.value ? 1 : 0,
-            icons: [
-              AnimatedIconItem(
-                icon: Icon(
-                  Icons.brightness_2_rounded,
-                  color: Colors.grey.shade400,
-                ),
-              ),
-              const AnimatedIconItem(
-                icon: Icon(
-                  Icons.brightness_7_rounded,
-                  color: Colors.amber,
-                ),
-              ),
-            ],
+          AnimatedBuilder(
+            animation: ThemeController.instance.isDark,
+            builder: (context, __) {
+              return Switch(
+                value: ThemeController.instance.isDark.value,
+                activeColor: Colors.amber,
+                onChanged: (_) => ThemeController.instance.toggleTheme(),
+              );
+            },
           ),
         ],
       ),

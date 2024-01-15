@@ -4,6 +4,7 @@ import 'package:flutter_nexmuv/app/blocs/crypto/crypto_bloc.dart';
 import 'package:flutter_nexmuv/app/controllers/home_controller.dart';
 import 'package:flutter_nexmuv/app/http/http.dart';
 import 'package:flutter_nexmuv/app/http/uno_client.dart';
+import 'package:flutter_nexmuv/app/interfaces/crypto_repository_interface.dart';
 import 'package:flutter_nexmuv/app/repositories/crypto_repository.dart';
 
 class Inject {
